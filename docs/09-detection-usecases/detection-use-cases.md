@@ -48,7 +48,7 @@ Each detection use case in this lab will be documented using the following struc
 
 ---
 
-## Example Detection (Template — Not Yet Validated)
+## Detection Preview
 
 The following illustrates the intended format for completed detections, using a common, well-documented technique as an example. **This detection has not yet been tested against a live attack simulation in this lab** and is included to demonstrate the analytical approach.
 

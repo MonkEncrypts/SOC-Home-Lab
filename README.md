@@ -102,7 +102,8 @@ SOC-Home-Lab/
 │   ├── 02-architecture/
 │   │   ├── network-architecture.md    ← Final network design and IP allocation
 │   │   ├── network-segmentation.md    ← VMnet1 vs VMnet8 design rationale
-│   │   └── architecture-decisions.md  ← Why the architecture changed
+│   │   ├── architecture-decisions.md  ← Why the architecture changed
+│   │   └── screenshots/
 │   │
 │   ├── 03-environment-setup/
 │   │   ├── vmware-installation.md     ← VMware Workstation Pro installation
@@ -178,7 +179,7 @@ SOC-Home-Lab/
 - ✅ Splunk Enterprise deployed and accessible at `http://localhost:8000`
 - ✅ Receiver configured on TCP port 9997 and verified with `Test-NetConnection`
 - ✅ Windows 10 endpoint instrumented with Sysmon (SwiftOnSecurity baseline)
-- 🔄 Sysmon telemetry generation confirmed via installation output and downstream Splunk ingestion; dedicated Event Viewer screenshot evidence pending (see [Roadmap](docs/13-future-improvements/roadmap.md))
+- ✅ Sysmon telemetry generation verified in both Windows Event Viewer and Splunk Enterprise, confirming successful end-to-end endpoint telemetry collection.
 - ✅ Splunk Universal Forwarder installed and connected to SIEM
 - ✅ `inputs.conf` configured to forward `Microsoft-Windows-Sysmon/Operational` channel
 - ✅ Sysmon Event ID 1 (Process Creation) events confirmed in Splunk search

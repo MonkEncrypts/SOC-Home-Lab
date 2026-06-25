@@ -79,6 +79,16 @@ TcpTestSucceeded : True
 
 ## Network Segmentation Design
 
+### VMware Virtual Network Configuration
+
+![VMware Virtual Network Editor](screenshots/vmware-network-editor.jpeg)
+
+The SOC lab uses two VMware virtual networks:
+
+- **VMnet1 (Host-Only):** Isolated internal network used for communication between the Windows endpoint, Kali Linux attacker, and the Splunk host.
+- **VMnet8 (NAT):** Provides internet connectivity for software installation and updates while keeping attack traffic isolated from external networks.
+
+---
 ### VMnet1 — Host-Only Network (Attack and Monitoring Traffic)
 
 This network carries all security-relevant traffic between the virtual machines and the SIEM host. It is completely isolated from the external internet, ensuring that attack simulations do not generate real-world network activity.

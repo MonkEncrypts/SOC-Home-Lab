@@ -20,6 +20,12 @@ This is the same log channel — `Microsoft-Windows-Sysmon/Operational` — that
 
 The following Sysmon event types were observed in the Operational log, confirming both correct installation and correct application of the SwiftOnSecurity configuration:
 
+### Screenshot Reference
+
+![Sysmon Operational Log](screenshots/02-sysmon-event-viewer-operational.jpeg)
+
+The Event Viewer confirms that Sysmon is actively generating endpoint telemetry. Event IDs 1 (Process Creation), 4 (Service State Changed), 5 (Process Termination), and 16 (Configuration Change) were observed in the `Microsoft-Windows-Sysmon/Operational` log, confirming successful deployment and configuration.
+
 ### Event ID 16 — Sysmon Configuration Change
 
 Confirms that the SwiftOnSecurity configuration file was successfully loaded by the Sysmon service. This event fires once at service start (or whenever the configuration is reloaded) and includes a hash of the active configuration, which is useful for confirming configuration integrity over time.
@@ -44,13 +50,6 @@ This is the single most valuable event ID for detection engineering — the majo
 Confirms Sysmon is also tracking when monitored processes exit, which supports building a complete process lifecycle timeline during an investigation.
 
 ---
-
-## Screenshot Reference
-
-Event Viewer screenshot evidence for this section — showing Event IDs 1, 4, 5, and 16 in the `Microsoft-Windows-Sysmon/Operational` log — is pending and tracked in [Future Improvements](../13-future-improvements/roadmap.md). Until that capture is added, verification for this stage relies on the installation output in [Sysmon Installation](sysmon-installation.md) together with the downstream confirmation that Sysmon events are reaching Splunk (see [Log Verification](../08-log-verification/splunk-search-validation.md)), which would not be possible if the service were not actively generating telemetry.
-
----
-
 ## Result
 
 Sysmon was successfully deployed on the Windows 10 endpoint and confirmed to be actively generating security-relevant telemetry consistent with the SwiftOnSecurity detection baseline. The endpoint is now ready to have its Sysmon log channel forwarded to Splunk Enterprise — see [Universal Forwarder Installation](../07-log-forwarding/uf-installation.md).
