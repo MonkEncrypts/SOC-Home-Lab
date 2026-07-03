@@ -1,18 +1,28 @@
 
-## v1.0
+# Changelog
 
-- Created PowerShell EncodedCommand detection.
-- Validated Sysmon Event ID 1 telemetry.
-- Verified Splunk ingestion.
-- Developed initial SPL query.
-- Documented MITRE ATT&CK mapping.
-- Added analyst investigation playbook.
+## v1.0 — Initial Release
+
+### Added
+
+- Initial PowerShell EncodedCommand detection (DET-001)
+- Detection hypothesis and validation methodology
+- Sysmon Event ID 1 telemetry validation
+- Splunk Enterprise detection query
+- MITRE ATT&CK mapping
+- Analyst investigation playbook
+- False positive analysis
+- Telemetry analysis
+- Field dependency matrix
+- Lessons learned
+- Investigation timeline
+- Detection evidence and screenshots
 
 ---
 
 ## Planned Improvements
 
-- Improve Sysmon field extraction.
-- Replace XML searches with extracted fields.
-- Reduce false positives.
-- Improve SPL performance.
+- Improve Sysmon field extraction within Splunk.
+- Replace raw XML string matching with extracted field-based searches.
+- Optimize SPL query performance.
+- Reduce false positives through additional detection logic.

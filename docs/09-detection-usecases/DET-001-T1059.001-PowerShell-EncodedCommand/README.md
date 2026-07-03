@@ -7,14 +7,14 @@
 | ---------------------- | ------------------------------------- |
 | Detection ID           | DET-001                               |
 | Detection Name         | Suspicious PowerShell Encoded Command |
-| Status                 | In Progress                           |
+| Status                 | ✅ Validated                           |
 | MITRE ATT&CK Technique | T1059.001                             |
 | ATT&CK Tactic          | Execution                             |
 | Severity               | Medium                                |
 | Data Source            | Sysmon Event ID 1                     |
 | SIEM                   | Splunk Enterprise                     |
 | Detection Type         | Process Creation                      |
-| Telemetry Source       | Microsoft-Windows-Sysmon/Operational
+| Telemetry Source       | Microsoft-Windows-Sysmon/Operational  |
 
 ---
 ## Overview
@@ -129,14 +129,22 @@ Successful completion of this detection should demonstrate that:
 
 ---
 
-## Repository Navigation
+## Documentation Index
 
-- Attack Documentation
-- Detection Logic
-- Evidence
-- Investigation
-- MITRE ATT&CK Mapping
-- Telemetry Analysis
-- Analyst Playbook
-- Lessons Learned
-- Validation
+### Core Documentation
+
+- [Detection Evolution](./detection-evolution.md)
+- [Telemetry Analysis](./telemetry-analysis.md)
+- [Telemetry Pipeline](./telemetry-pipeline.md)
+- [MITRE ATT&CK Mapping](./mitre/mitre-mapping.md)
+- [Analyst Playbook](./analyst-playbook.md)
+- [Lessons Learned](./lessons-learned.md)
+- [Validation](./validation.md)
+  
+### Evidence
+
+- [Event Field Analysis](./evidence/event-fields.md)
+  
+### Investigation
+
+- [Investigation Notes](./investigation/investigation-notes.md)

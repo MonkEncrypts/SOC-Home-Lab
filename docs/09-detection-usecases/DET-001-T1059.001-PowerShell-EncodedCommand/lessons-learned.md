@@ -1,4 +1,6 @@
 
+# Lessons Learned
+
 - Sysmon Event ID 1 records every process creation on the endpoint, not just suspicious activity. As a result, multiple Event ID 1 events may be generated within a very short period of time.
 
 - During investigation, the most recent process creation event is not always the event of interest. Windows continues launching background processes, which can produce additional Event ID 1 logs immediately after the activity being investigated.
@@ -11,6 +13,6 @@
 
 ## Investigation Note
 
-During the investigation, the telemetry pipeline initially appeared to be failing because expected search queries returned no results. Systematic troubleshooting confirmed that Sysmon was generating events, the Splunk Universal Forwarder maintained an active connection to the Splunk server, and telemetry was being indexed successfully. The issue was caused by using search queries that assumed specific extracted fields rather than first understanding how the data was stored in the SIEM.
+During the investigation, the telemetry pipeline initially appeared to be failing because expected search queries returned no results. Systematic troubleshooting confirmed that Sysmon was generating events, the Splunk Universal Forwarder maintained an active connection to the Splunk server, and telemetry was being indexed successfully. The issue was caused by using search queries that assumed specific extracted fields, rather than first understanding how the data was stored in the SIEM.
 
 **Key Lesson:** Always validate the ingestion pipeline before modifying configurations. Confirm endpoint telemetry, forwarding, indexing, and data structure before concluding that data collection has failed.
