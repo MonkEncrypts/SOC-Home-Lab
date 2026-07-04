@@ -133,7 +133,7 @@ SOC-Home-Lab/
 │   │   └── screenshots/
 │   │
 │   ├── 09-detection-usecases/
-│   │   └── detection-use-cases.md     ← MITRE ATT&CK mapped detections (planned)
+│   │   └── detection-use-cases.md     ← MITRE ATT&CK mapped detections
 │   │
 │   ├── 10-incident-response/
 │   │   └── ir-playbook-template.md    ← IR workflow placeholder
@@ -192,13 +192,13 @@ SOC-Home-Lab/
 
 Detection engineering content is in active development. Planned coverage includes:
 
-| ATT&CK Technique | Tactic | Sysmon Event ID | Status |
-|---|---|---|---|
-| T1059.001 — PowerShell Execution | Execution | Event ID 1 | 📋 Planned |
-| T1003.001 — LSASS Memory Dump | Credential Access | Event ID 10 | 📋 Planned |
-| T1071.001 — HTTP C2 Beaconing | Command and Control | Event ID 3 | 📋 Planned |
-| T1547.001 — Registry Run Keys | Persistence | Event ID 12/13 | 📋 Planned |
-| T1543.003 — Malicious Service Creation | Persistence | Event ID 1 | 📋 Planned |
+| ATT&CK Technique                       | Tactic              | Sysmon Event ID | Status      |
+| -------------------------------------- | ------------------- | --------------- | ----------- |
+| T1059.001 — PowerShell Execution       | Execution           | Event ID 1      | ✅ Validated |
+| T1003.001 — LSASS Memory Dump          | Credential Access   | Event ID 10     | 📋 Planned  |
+| T1071.001 — HTTP C2 Beaconing          | Command and Control | Event ID 3      | 📋 Planned  |
+| T1547.001 — Registry Run Keys          | Persistence         | Event ID 12/13  | 📋 Planned  |
+| T1543.003 — Malicious Service Creation | Persistence         | Event ID 1      | 📋 Planned  |
 
 ---
 
