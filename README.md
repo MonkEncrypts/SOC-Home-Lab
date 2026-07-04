@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./banner.svg" alt="SOC Home Lab Banner" width="100%">
+</p>
 # SOC Home Lab — Splunk SIEM + Sysmon Endpoint Monitoring
 
 > A hands-on Security Operations Center home lab simulating real-world log collection, telemetry analysis, and threat detection workflows.
