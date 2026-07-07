@@ -1,7 +1,7 @@
 # MITRE ATT&CK Mapping
 
-| Previous | Current | Next |
-|----------|---------|------|
+| Previous                                             | Current                  | Next                                        |
+| ---------------------------------------------------- | ------------------------ | ------------------------------------------- |
 | [← False Positives](../detection/false-positives.md) | **MITRE ATT&CK Mapping** | [Validation →](../validation/validation.md) |
 
 ---

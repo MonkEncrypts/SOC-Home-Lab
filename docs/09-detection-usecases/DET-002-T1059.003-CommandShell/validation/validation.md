@@ -1,7 +1,7 @@
 # Validation
 
-| Previous                                            | Current        | Next                                                                                                        |
-| --------------------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------- |
+| Previous                                            | Current        | Next                                                                                                         |
+| --------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
 | [← MITRE ATT&CK Mapping](../mitre/mitre-mapping.md) | **Validation** | [Lessons Learned →](docs/09-detection-usecases/DET-002-T1059.003-CommandShell/validation/lessons-learned.md) |
 
 ---
@@ -105,7 +105,6 @@ The validated workflow established during this investigation provides a repeatab
 > Validation is not limited to verifying that an attack executed successfully. A complete SOC investigation also validates telemetry generation, log forwarding, SIEM visibility, evidence integrity, and the analyst's ability to reconstruct attacker activity. Demonstrating this end-to-end validation reflects a mature approach to detection development and incident investigation.
 
 ---
-
 ## Next Step
 
-➡ Continue to **[Lessons Learned →](docs/09-detection-usecases/DET-002-T1059.003-CommandShell/validation/lessons-learned.md)**.
+➡ Continue to **[Lessons Learned](lessons-learned.md)**.
