@@ -235,6 +235,6 @@ This investigation is part of an ongoing effort to build practical SOC Analyst s
 > **Next Step**
 >
 > Begin the investigation with the **Attack Scenario** document:
->[Attack Scenario →](attack-scenario.md)
+>[Attack Scenario →](attack/attack-scenario.md)
 
 
