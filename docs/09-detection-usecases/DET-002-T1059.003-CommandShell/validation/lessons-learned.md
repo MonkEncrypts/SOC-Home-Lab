@@ -1,8 +1,7 @@
 # Lessons Learned
-
-| Previous                      | Current             | Next                     |
-| ----------------------------- | ------------------- | ------------------------ |
-| [← Validation](validation.md) | **Lessons Learned** | [README →](../README.md) |
+| Previous | Current | Next |
+|----------|---------|------|
+| [← Validation](validation.md) | **Lessons Learned** | [Return to README →](../README.md) |
 
 ---
 

@@ -1,8 +1,8 @@
 # Validation
 
-| Previous                                            | Current        | Next                                                                                                         |
-| --------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
-| [← MITRE ATT&CK Mapping](../mitre/mitre-mapping.md) | **Validation** | [Lessons Learned →](docs/09-detection-usecases/DET-002-T1059.003-CommandShell/validation/lessons-learned.md) |
+| Previous                                            | Current        | Next                                    |
+| --------------------------------------------------- | -------------- | --------------------------------------- |
+| [← MITRE ATT&CK Mapping](../mitre/mitre-mapping.md) | **Validation** | [Lessons Learned →](lessons-learned.md) |
 
 ---
 
